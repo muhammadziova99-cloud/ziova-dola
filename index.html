@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil UMKM - Bakso Solo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#10B981', // Hijau segar
+                        secondary: '#3B82F6', // Biru bersih
+                        dark: '#1F2937',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .card-hover {
+                @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-primary">
+                        <i class="fa fa-cutlery mr-2"></i>Profil UMKM
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gradient-to-r from-primary/10 to-secondary/10 py-12 animate-fade-in">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl font-bold text-dark mb-4 text-shadow">
+                Bakso Solo
+            </h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Rasanya sangat enak dan gurih, cita rasa khas Jawa Tengah!
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        
+        <!-- Data Usaha Section -->
+        <section class="bg-white rounded-2xl shadow-lg p-6 mb-10 card-hover">
+            <h2 class="text-2xl font-bold text-dark mb-6 border-b pb-3">
+                <i class="fa fa-info-circle text-primary mr-2"></i>Data Usaha
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fa fa-store text-primary"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500">Nama UMKM</p>
+                            <p class="font-semibold text-lg">Bakso Solo</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fa fa-user text-primary"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500">Nama Pemilik</p>
+                            <p class="font-semibold text-lg">Ziova</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fa fa-map-marker text-primary"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500">Alamat Lengkap</p>
+                            <p class="font-semibold text-lg">Jl. KS Tubun 4</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fa fa-phone text-primary"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500">No. HP / WhatsApp</p>
+                            <a href="https://wa.me/6285880911131" target="_blank" class="font-semibold text-lg text-primary hover:underline">085880911131</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fa fa-envelope text-primary"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500">Email</p>
+                            <p class="font-semibold text-lg">Muhammadziova99@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fa fa-clock-o text-primary"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500">Jam Operasional</p>
+                            <p class="font-semibold text-lg">08.00 - 19.00 WIB</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 flex-shrink-0">
+                            <i class="fa fa-tags text-primary"></i>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500">Kategori Usaha</p>
+                            <span class="inline-block bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm font-semibold mt-1">Kuliner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deskripsi Usaha -->
+        <section class="bg-white rounded-2xl shadow-lg p-6 mb-10 card-hover">
+            <h2 class="text-2xl font-bold text-dark mb-4">
+                <i class="fa fa-file-text-o text-primary mr-2"></i>Deskripsi Usaha
+            </h2>
+            <p class="text-gray-700 leading-relaxed">
+                Bakso Solo adalah kuliner khas Jawa Tengah yang terkenal dengan tekstur daging sapi yang kenyal dan padat, serta kuah bening yang sangat gurih. Kami menyajikan rasa yang sangat enak dan otentik.
+            </p>
+        </section>
+
+        <!-- Daftar Produk -->
+        <section class="mb-10">
+            <h2 class="text-2xl font-bold text-dark mb-6 text-center">
+                <i class="fa fa-shopping-basket text-primary mr-2"></i>Daftar Menu & Produk
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Produk Card -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-r from-primary/20 to-secondary/20 flex items-center justify-center">
+                        <i class="fa fa-cutlery text-6xl text-primary/50"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-dark mb-2">Bakso Solo</h3>
+                        <p class="text-gray-600 mb-4">Kuliner khas Jawa Tengah dengan tekstur daging kenyal & kuah gurih.</p>
+                        
+                        <div class="mb-4">
+                            <h4 class="font-semibold text-gray-700 mb-2">Varian Menu:</h4>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1">
+                                <li>Bakso Daging</li>
+                                <li>Bakso Mercon</li>
+                            </ul>
+                        </div>
+
+                        <div class="flex justify-between items-center mt-6 pt-4 border-t">
+                            <span class="text-2xl font-bold text-primary">Rp 15.000 - 35.000</span>
+                            <a href="https://wa.me/6285880911131?text=Halo%20kak,%20saya%20mau%20pesan%20Bakso%20Solo" target="_blank" class="bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-lg transition-colors">
+                                <i class="fa fa-whatsapp mr-2"></i>Pesan Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info Tambahan Card -->
+                <div class="bg-white rounded-2xl shadow-lg p-6 card-hover flex flex-col justify-center">
+                    <div class="text-center mb-6">
+                        <div class="w-20 h-20 rounded-full bg-secondary/10 flex items-center justify-center mx-auto mb-4">
+                            <i class="fa fa-star text-4xl text-secondary"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-dark">Keunggulan Kami</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center">
+                            <i class="fa fa-check-circle text-green-500 mr-3 text-xl"></i>
+                            <span>Rasa sangat enak & gurih</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check-circle text-green-500 mr-3 text-xl"></i>
+                            <span>Tekstur daging kenyal & padat</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check-circle text-green-500 mr-3 text-xl"></i>
+                            <span>Kuah bening khas Solo</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check-circle text-green-500 mr-3 text-xl"></i>
+                            <span>Tersedia varian original & pedas</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="bg-gradient-to-r from-primary to-secondary text-white rounded-2xl shadow-xl p-8 text-center card-hover">
+            <h2 class="text-2xl font-bold mb-4">Tertarik Mencoba?</h2>
+            <p class="mb-6 opacity-90">Kunjungi tempat kami atau hubungi kami untuk pemesanan!</p>
+            <a href="https://wa.me/6285880911131" target="_blank" class="inline-block bg-white text-primary font-bold px-8 py-3 rounded-full hover:bg-gray-100 transition-colors shadow-lg">
+                <i class="fa fa-whatsapp mr-2"></i>Hubungi Kami Sekarang
+            </a>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-8 mt-10">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p>&copy; 2024 Bakso Solo - Ziova. All rights reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">Jl. KS Tubun 4</p>
+        </div>
+    </footer>
+
+    <!-- Simple Animation Script -->
+    <script>
+        // Fade in animation on scroll
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100', 'translate-y-0');
+                        entry.target.classList.remove('opacity-0', 'translate-y-4');
+                    }
+                });
+            });
+
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-4');
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
